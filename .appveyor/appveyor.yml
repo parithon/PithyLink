@@ -1,4 +1,8 @@
 version: 1.0.{build}
+branches:
+    online:
+        - master
+        - dev
 image: Visual Studio 2017 Preview
 configuration: Release
 build:
