@@ -8,6 +8,4 @@ jobs:
       - run: find .
       - run: dotnet restore      
       - run: dotnet build
-    tests:
-      override:
-        - dotnet test
+      - run: dotnet test --no-build PithyLink.Web.Tests
