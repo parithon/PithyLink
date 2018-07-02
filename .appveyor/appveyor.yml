@@ -8,3 +8,5 @@ configuration: Release
 build_script:
     - pwsh: dotnet restore
     - pwsh: dotnet build
+test_script:
+    - pwsh: $(Get-ChildItem -Filter *.Tests) | %{ dotnet test --no-build --blame $_.Name }

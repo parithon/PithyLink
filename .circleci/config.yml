@@ -13,4 +13,4 @@ jobs:
             command: dotnet build
       - run: 
             name: Run tests
-            command: dotnet test --no-build PithyLink.Web.Tests
+            command: $(Get-ChildItem -Filter *.Tests) | %{ dotnet test --no-build --blame $_.Name }
