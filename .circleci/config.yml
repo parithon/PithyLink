@@ -8,5 +8,6 @@ jobs:
       - run: find .
       - run: dotnet restore      
       - run: dotnet build
-      - run: find **.Tests/.
-      - run: dotnet test
+    tests:
+      override:
+        - dotnet test
