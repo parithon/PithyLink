@@ -11,24 +11,25 @@ namespace PithyLink.Web.Pages
 {
     public class IndexModel : PageModel
     {
-
         [Required]
         [IsValidUrl]
         [BindProperty]
         [Display(Name = "Url")]
         public string ShortenUrl { get; set; }
 
-        public void OnGet()
+        public async Task<IActionResult> OnGetAsync()
         {
-
+            await Task.Delay(0);
+            return Page();
         }
 
-        public void OnPost()
+        public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
-                return;
+                return Page();
 
-            RedirectToPage("/Index");
+            await Task.Delay(0);
+            return RedirectToPage("/Index");
         }
     }
 }
