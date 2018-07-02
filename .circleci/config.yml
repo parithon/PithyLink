@@ -5,6 +5,12 @@ jobs:
       - image: microsoft/dotnet:2.1-sdk
     steps:
       - checkout
-      - run: find .
-      - run: dotnet restore
-      - run: dotnet build
+      - run: 
+            name: Restore all dependencies
+            command: dotnet restore      
+      - run: 
+            name: Build all projects
+            command: dotnet build
+      - run: 
+            name: Run tests
+            command: dotnet test --no-build PithyLink.Web.Tests
