@@ -7,4 +7,5 @@ jobs:
       - checkout
       - run: find .
       - run: dotnet restore
+      - run: dotnet test
       - run: dotnet build
