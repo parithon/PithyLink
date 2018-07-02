@@ -8,7 +8,3 @@ configuration: Release
 build_script:
     - pwsh: dotnet restore
     - pwsh: dotnet build
-test:
-    assemblies:
-        only:
-            - '*.Tests.dll'
