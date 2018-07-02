@@ -13,4 +13,6 @@ jobs:
             command: dotnet build
       - run: 
             name: Run tests
-            command: dotnet test --no-build PithyLink.Web.Tests
+            command: for f in *.Tests ; do dotnet test --no-build $f ; done
+      - store_test_results:
+            path: test-results

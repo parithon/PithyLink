@@ -1,0 +1,12 @@
+version: 1.0.{build}
+branches:
+    online:
+        - master
+        - dev
+image: Visual Studio 2017 Preview
+configuration: Release
+build_script:
+    - pwsh: dotnet restore
+    - pwsh: dotnet build
+test_script:
+    - pwsh: $(Get-ChildItem -Filter *.Tests) | %{ dotnet test --no-build --blame $_.Name }
