@@ -5,5 +5,10 @@ branches:
         - dev
 image: Visual Studio 2017 Preview
 configuration: Release
-build:
-    verbosity: minimal
+build_script:
+    - pwsh: dotnet restore
+    - pwsh: dotnet build
+test:
+    assemblies:
+        only:
+            - '*.Tests.dll'
