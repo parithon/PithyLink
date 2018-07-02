@@ -1,0 +1,33 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@section head {
+    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+}
+
+    <div class="row h-md-100 align-items-center">
+        <div class="col-sm-1 col-md-1 mb-2">
+            <span class="fa-layers fa-6x">
+                <i class="fas fa-bookmark text-primary"></i>
+                <i class="fas fa-link text-light" data-fa-transform="shrink-10 up-2"></i>
+            </span>
+            <h1 class="d-inline d-md-none" style="font-family: 'Patua One', cursive; padding-bottom: 2em;">Pithy Link</h1>
+        </div>
+        <div class="col-sm-1 col-md-11">
+            <h1 class="d-none d-md-flex" style="font-family: 'Patua One';">
+                Pithy Link
+            </h1>
+            <form asp-page="/Index" method="post">
+                <div class="input-group">
+                    <input asp-for="ShortenUrl" type="text" class="form-control" placeholder="Url" aria-label="Url" />
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-primary">Shorten</button>
+                    </div>
+                </div>
+                <span asp-validation-for="ShortenUrl" class="text-danger"></span>
+            </form>
+        </div>
+    </div>
