@@ -11,7 +11,7 @@
 
 variables:
 - name: TestProjects
-  value: '**/[Tt]est*/*.csproj'
+  value: '**/[Tt]ests*/*.csproj'
 - name: RestoreBuildProjects
   value: '**/*.csproj'
 
@@ -21,19 +21,19 @@ steps:
   displayName: Restore
   inputs:
     command: restore
-    projects: '$(Parameters.RestoreBuildProjects)'
+    projects: '$(RestoreBuildProjects)'
 
 - task: DotNetCoreCLI@2
   displayName: Build
   inputs:
-    projects: '$(Parameters.RestoreBuildProjects)'
+    projects: '$(RestoreBuildProjects)'
     arguments: '--configuration $(BuildConfiguration)'
 
 - task: DotNetCoreCLI@2
   displayName: Test
   inputs:
     command: test
-    projects: '$(Parameters.TestProjects)'
+    projects: '$(TestProjects)'
     arguments: '--configuration $(BuildConfiguration)'
 
 - task: DotNetCoreCLI@2
