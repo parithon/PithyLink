@@ -5,23 +5,14 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PithyLink.Web", "PithyLink.Web\PithyLink.Web.csproj", "{C42AA12E-1A83-452D-9FAA-A4DD9AC0B261}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".circleci", ".circleci", "{BD89400E-153F-401A-82B0-0D07404FC689}"
-	ProjectSection(SolutionItems) = preProject
-		.circleci\config.yml = .circleci\config.yml
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PithyLink.Web.Tests", "PithyLink.Web.Tests\PithyLink.Web.Tests.csproj", "{E5C8BC25-2B57-4326-A7BF-1CD0CD799818}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DC13521C-26F6-4860-9B1D-B05F828C2E1E}"
 	ProjectSection(SolutionItems) = preProject
 		CHANGES.md = CHANGES.md
 		CODE-OF-CONDUCT.md = CODE-OF-CONDUCT.md
+		CONTRIBUTING.md = CONTRIBUTING.md
 		README.md = README.md
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".appveyor", ".appveyor", "{BD8B0C57-DD39-4B02-861C-A3F4F8AA1584}"
-	ProjectSection(SolutionItems) = preProject
-		.appveyor\appveyor.yml = .appveyor\appveyor.yml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".azure-pipelines", ".azure-pipelines", "{25C80984-6B94-4680-84EC-F1DB56B7662C}"
