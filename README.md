@@ -2,7 +2,7 @@
 
 Master Branch | Dev Branch
 ------ | ---
-[![CircleCI](https://circleci.com/gh/parithon/PithyLink/tree/master.svg?style=svg)](https://circleci.com/gh/parithon/PithyLink/tree/master) | [![CircleCI](https://circleci.com/gh/parithon/PithyLink/tree/dev.svg?style=svg)](https://circleci.com/gh/parithon/PithyLink/tree/dev)
+[![Build Status](https://dev.azure.com/parithon/PithyLink/_apis/build/status/parithon.PithyLink?branchName=master)](https://dev.azure.com/parithon/PithyLink/_build/latest?definitionId=47&branchName=master)|[![Build Status](https://dev.azure.com/parithon/PithyLink/_apis/build/status/parithon.PithyLink?branchName=dev)](https://dev.azure.com/parithon/PithyLink/_build/latest?definitionId=47&branchName=dev)
 
 
 ## Preview Site
@@ -15,9 +15,9 @@ https://pithylink.azurewebsites.net
 
 ## Tools
 
-### Visual Studio 2017 (15.8-preview3)
+### Visual Studio 2017 (15.9.7)
 
-We currently use this IDE because it has libman built in.
+### Visual Studio Code 1.31.1
 
 ### Azure Cosmos DB Emulator for local development
 
@@ -30,7 +30,7 @@ We store the shortened urls in a NoSQL database:
 
 ## Contributing
 
-When contributing to this repository, please first discuss the changes you wish to make with the owners and maintainers before submitting a Pull Request (PR).
+When contributing to this repository, please first discuss the changes you wish to make with the owners and maintainers by generating a 'Draft' Pull Request (PR).
 
 ### Pull Request Process
 
