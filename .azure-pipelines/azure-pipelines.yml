@@ -11,9 +11,9 @@
 
 variables:
 - name: TestProjects
-  value: **/[Tt]est*/*.csproj
+  value: '**/[Tt]est*/*.csproj'
 - name: RestoreBuildProjects
-  value: **/*.csproj
+  value: '**/*.csproj'
 
 
 steps:
