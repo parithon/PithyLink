@@ -24,6 +24,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".appveyor", ".appveyor", "{
 		.appveyor\appveyor.yml = .appveyor\appveyor.yml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".azure-pipelines", ".azure-pipelines", "{25C80984-6B94-4680-84EC-F1DB56B7662C}"
+	ProjectSection(SolutionItems) = preProject
+		.azure-pipelines\azure-pipelines.yml = .azure-pipelines\azure-pipelines.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
